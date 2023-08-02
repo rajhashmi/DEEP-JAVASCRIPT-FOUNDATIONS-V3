@@ -1,6 +1,17 @@
 var v;
 typeof v; // "Undefined";
 
+// Undefined VS undeclared 
+// ===============================================================================================
+//  * Undefined
+
+// 1. Undefined  there is deffinitely a variable, at the moment. it does not have any value
+// ==============================================================================================
+// ==============================================================================================
+// 2. undeclared
+
+//  undeclared means its never been created in any scope that we hace access to.
+// ==========================================================================================
 // we can think undefined as a default  value
 // the most appropriate way to thin about it is, does not currently have a value
 v = "1";

@@ -21,7 +21,7 @@ trendRate > 0; // false
 
 // It just like quadruple equals ====
 
-Object.is(trendRate, 0); // true;
+Object.is(trendRate, -0); // true;
 Object.is(trendRate, 0) // false;
 
 
