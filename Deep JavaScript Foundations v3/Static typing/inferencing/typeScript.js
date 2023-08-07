@@ -5,3 +5,5 @@ function getName(studentRec) {
 }
 var firstStudent = { name: "shahid hashmi" };
 var firstStudentName = getName(firstStudent);
+ 
+console.log(typeof firstStudentName);

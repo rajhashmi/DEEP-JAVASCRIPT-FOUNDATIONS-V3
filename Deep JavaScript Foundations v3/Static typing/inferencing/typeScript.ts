@@ -6,16 +6,29 @@
 
 // ====================================================================
 
-type Student = {
-    name: string;
-};
+// type Student = {
+//     name: string;
+// };
  
 
-function getName(studentRec: Student): string {
-    return studentRec.name
-}
+// function getName(studentRec: Student): string {
+//     return studentRec.name
+// }
 
-let firstStudent: Student = {name : "shahid hashmi"};
+// let firstStudent: Student = {name : "shahid hashmi"};
 
-let firstStudentName: string = getName(firstStudent);
+// let firstStudentName: string = getName(firstStudent);
+
+
+// console.log(firstStudentName);
+
+
+
+
+// var StudentName: string = "shahid";
+// var StudentCount: number = 16 - StudentName;
+
+// error: can't substract string;
+
+
 
