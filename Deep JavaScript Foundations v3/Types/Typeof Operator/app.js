@@ -35,16 +35,25 @@ typeof v; // "Symbol"
 v = null;
 typeof v // "object"
 
+console.log(typeof "Hello");                // "string"
+console.log(typeof 42);                     // "number"
+console.log(typeof 3.14);                   // "number"
+console.log(typeof true);                   // "boolean"
+console.log(typeof undefined);              // "undefined"
+console.log(typeof null);                   // "object"
+console.log(typeof [1, 2, 3]);              // "object"
+console.log(typeof { key: "value" });       // "object"
+console.log(typeof function() {});          // "function"
+console.log(typeof Symbol("symbol"));       // "symbol" (ES6)
+console.log(typeof BigInt(123));            // "bigint" (ES11)
 
-console.log(typeof 42);          // "number"
-console.log(typeof "Hello");     // "string"
-console.log(typeof true);        // "boolean"
-console.log(typeof undefined);   // "undefined"
-console.log(typeof null);        // "object" (Note: This is a historical quirk in JavaScript)
-console.log(typeof [1, 2, 3]);   // "object"
-console.log(typeof { key: "value" });  // "object"
-console.log(typeof function() {}); // "function"
-console.log(typeof Symbol("symbol")); // "symbol" (ES6)
+console.log(typeof NaN);                    // "number" (NaN is a special kind of number)
+console.log(typeof Infinity);               // "number" (Infinity is a special number)
+console.log(typeof Math);                   // "object" (Math is an object with mathematical functions)
+console.log(typeof Math.random);            // "function" (Math.random is a function)
+console.log(typeof document);               // "object" (in a browser context)
+console.log(typeof document.createElement); // "function"
+
 
 
 v = function(){};
