@@ -57,18 +57,30 @@ function teacher (teacher){
 (teacher)() // we call like this too but dont want someone change this
 
 
-(function (teacher){
-    console.log(teacher);
-})("shahid");
+// (function (teacher){
+//     console.log(teacher);
+// })("shahid");
 
-// block scope :->
+// // block scope :->
 
-{
-    let teacher = "hashmi";
-    console.log(teacher);
-}
+// {
+//     let teacher = "hashmi";
+//     console.log(teacher);
+// }
 //  almost same but we use lat instead of var bcuz for historical reason var is atached to its parent scope
 //  block are not scope until we use let or const in it. and it make implicity block scope
 
 
 
+// Hoisting
+
+// hoising is not exist in javaScript
+
+// Hoisting is a concept in JavaScript where variable and function declarations are moved (conceptually) to the top of their containing scope during the compilation phase, before the actual code execution takes place. This means that you can use variables and call functions before they are declared in the code.
+
+// However, it's important to note that hoisting doesn't physically move code to the top of the file; it's a behavior that's managed by the JavaScript engine during its processing of the code.
+
+// Here's a brief summary of how hoisting works for variable and function declarations:
+
+// Variable Declarations (Hoisted):
+// Variable declarations using the var keyword are hoisted to the top of their containing scope. This means that you can access the variable before its declaration, but its value will be undefined until it's actually assigned a value.
