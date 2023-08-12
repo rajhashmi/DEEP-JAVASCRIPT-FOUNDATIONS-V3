@@ -35,6 +35,18 @@ typeof v; // "Symbol"
 v = null;
 typeof v // "object"
 
+
+console.log(typeof 42);          // "number"
+console.log(typeof "Hello");     // "string"
+console.log(typeof true);        // "boolean"
+console.log(typeof undefined);   // "undefined"
+console.log(typeof null);        // "object" (Note: This is a historical quirk in JavaScript)
+console.log(typeof [1, 2, 3]);   // "object"
+console.log(typeof { key: "value" });  // "object"
+console.log(typeof function() {}); // "function"
+console.log(typeof Symbol("symbol")); // "symbol" (ES6)
+
+
 v = function(){};
 typeof v; // "function" 
 
