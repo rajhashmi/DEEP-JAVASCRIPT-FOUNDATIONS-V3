@@ -22,9 +22,12 @@
  string()
  Number()
  Boolean()
-
- String, Boolean and Number when used as a function coerce any value to that respective primitive type.
 */
+var boolObj = new Boolean(false);
+if (boolObj) {
+  console.log("This will be executed!"); // This will be executed!
+}
+ // String, Boolean and Number when used as a function coerce any value to that respective primitive type.
 
 var yesterday = new Date("March 6, 2019");
 yesterday.toString();
