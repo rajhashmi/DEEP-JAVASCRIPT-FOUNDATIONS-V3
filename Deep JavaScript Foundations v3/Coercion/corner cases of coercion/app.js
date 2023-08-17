@@ -61,3 +61,30 @@ Number(false)//   0
     (3 > 2) > 1;
     (true) > 1
     1 > 1           // false
+
+
+typeof []; // -> 'object'
+typeof null; // -> 'object'
+
+// however
+null instanceof Object; // false
+
+Absolutely, let's make it even simpler:
+
+// Imagine you have a special box called "Object" that holds different things. This box has some rules, and you can check if something is inside this "Object" box using the `instanceof` tool.
+
+// Now, if you ask the `instanceof` tool whether an empty box called "null" is inside the "Object" box, it will say "No, it's not inside." This is because even though "null" is a type of box, it's not exactly the same as the "Object" box, so the tool says they're not related.
+
+// So, when you use `null instanceof Object`, the answer is "No, null is not inside the Object box."
+
+// I hope this helps make it clearer! If you have more questions or want to learn anything else, feel free to ask. We're here to help!
+
+
+Object.prototype.toString.call([]);
+// -> '[object Array]'
+
+Object.prototype.toString.call(new Date());
+// -> '[object Date]'
+
+Object.prototype.toString.call(null);
+// -> '[object Null]'
